@@ -22,5 +22,13 @@ int main()
       cout << i << " " << z << endl;
       j++;
     }
+    // 0110 -> 0100
+    int i = 6, j = 4;
+
+    // i -= i & -i;
+    // i &= i-1;
+    i |= (1 << j-1);
+
+    cout << i << endl;
     return 0;
 }

@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Solution {
   public:
    /**
@@ -32,3 +35,11 @@ class Solution {
       return dfs(1, 0, 0, 0, n);
    }
 };
+
+int main() {
+   Solution sol;
+   int n;
+   scanf("%d", &n);
+   cout << sol.totalNQueens(n) << endl;
+   return 0;
+}
